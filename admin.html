@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	<title>Digegastro - Cirurgia Bariátrica</title>
+
+    <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+	<link href="css/extras.css" rel="stylesheet" type="text/css"/>
+    <link href="css/aos.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Poppins:300,400,600,700" rel="stylesheet">
+	<link href="http://cdn.quilljs.com/1.2.6/quill.snow.css" rel="stylesheet">
+	<link href="http://cdn.quilljs.com/1.2.6/quill.bubble.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section id="loading" class="active suave">
+        <div class="logo-animation">
+            <img src="img/digegastro-reverse.png" class="responsive-img">
+        </div>
+    </section>
+
+    <ul id="slide-out" class="side-nav poppins">
+        <li>
+            <a href="admin.html">Home</a>
+        </li>
+        <li>
+            <a href="posts.html">Posts</a>
+        </li>
+    </ul>
+    <i class="mdi-navigation-menu click white-text menu-btn circle button-collapse hide-on-large-only" data-activates="slide-out"></i>
+
+	<section id="admin-header">
+		<div class="logo azul">
+			<h1 class="nm" alt="Digegastro Caron">
+				<a href="admin.html">
+					<img src="img/digegastro-logo.png" class="responsive-img" alt="logo digegastro">
+				</a>
+			</h1>
+		</div>
+		<ul class="nm">
+			<li class="click suave novo">
+				Novo Post <i class="mdi-content-add-circle"></i>
+			</li>
+			<li class="click suave">
+				Sair <i class="mdi-action-lock-open"></i>
+			</li>
+		</ul>
+        </div>
+    </section>
+
+	<section id="admin-body">
+		<ul class="nm">
+			<li>
+				<div class="titulo grey-text">
+					Post
+				</div>
+				<div class="estado grey-text">
+					Publicado
+				</div>
+				<div class="acoes grey-text">
+					Editar / Deletar
+				</div>
+			</li>
+			<li class="suave">
+				<div class="titulo">
+					<a href="#!" class="azul-text">Acompanhamento nutricional</a>
+				</div>
+				<div class="estado">
+					<div class="switch">
+						<label>
+							Não
+								<input type="checkbox" checked>
+								<span class="lever"></span>
+							Sim
+						</label>
+					</div>
+				</div>
+				<div class="acoes">
+					<i class="mdi-content-create azul-text click"></i>
+					<i class="mdi-action-delete azul-text click"></i>
+				</div>
+			</li>
+			<li class="suave">
+				<div class="titulo">
+					<a href="#!" class="azul-text">Acompanhamento psicológico</a>
+				</div>
+				<div class="estado">
+					<div class="switch">
+						<label>
+							Não
+								<input type="checkbox" checked>
+								<span class="lever"></span>
+							Sim
+						</label>
+					</div>
+				</div>
+				<div class="acoes">
+					<i class="mdi-content-create azul-text click"></i>
+					<i class="mdi-action-delete azul-text click"></i>
+				</div>
+			</li>
+			<li class="suave">
+				<div class="titulo">
+					<a href="#!" class="azul-text">10 coisas que você precisa saber sobre cirurgia bariátrica</a>
+				</div>
+				<div class="estado">
+					<div class="switch">
+						<label>
+							Não
+								<input type="checkbox" checked>
+								<span class="lever"></span>
+							Sim
+						</label>
+					</div>
+				</div>
+				<div class="acoes">
+					<i class="mdi-content-create azul-text click"></i>
+					<i class="mdi-action-delete azul-text click"></i>
+				</div>
+			</li>
+			<li class="suave">
+				<div class="titulo">
+					<a href="#!" class="azul-text">Doenças Associadas</a>
+				</div>
+				<div class="estado">
+					<div class="switch">
+						<label>
+							Não
+								<input type="checkbox">
+								<span class="lever"></span>
+							Sim
+						</label>
+					</div>
+				</div>
+				<div class="acoes">
+					<i class="mdi-content-create azul-text click"></i>
+					<i class="mdi-action-delete azul-text click"></i>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section id="novoPost" class="white suave">
+		<h6 class="azul white-text">Novo Post</h6>
+		<form>
+			<p class="nm">Titulo:</p>
+			<input id="titulo" type="text" name="titulo" placeholder="Titulo do post">
+			<p class="nm">Descrição:</p>
+			<div id="editor"></div>
+			<p class="nm">Imagem:</p>
+			<input id="imagem" type="file">
+			<div class="right-align">
+				<button class="azul-text transparent fechar" type="reset">
+					<i class="mdi-navigation-close left"></i> Descartar
+				</button>
+				<button class="azul white-text" type="reset">
+					Publicar<i class="mdi-content-send right"></i>
+				</button>
+			</div>
+		</form>
+	</section>
+
+	<script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/goodscroll.js"></script>
+    <script src="js/aos.js"></script>
+	<script src="js/script.js"></script>
+	<script src="http://cdn.quilljs.com/1.2.6/quill.js"></script>
+	<script src="http://cdn.quilljs.com/1.2.6/quill.min.js"></script>
+	<script>
+	var options = {
+		debug: 'info',
+		placeholder: 'Compose an epic...',
+		readOnly: false,
+		theme: 'snow'
+	};
+	var editor = new Quill('#editor', options);
+
+	</script>
+</body>
+</html>
